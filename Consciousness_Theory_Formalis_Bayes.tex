@@ -1,0 +1,2726 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Consciousness Theory}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+a Mathematical Framework
+
+Oleksandr Savinykh
+
+Klagenfurt 2025
+
+\hypertarget{content}{%
+\section{\texorpdfstring{\textbf{Content}}{Content}}\label{content}}
+
+\protect\hyperlink{_Toc217642084}{Axiomatic Foundations of the
+Consciousness-Driven Reality Model \protect\hyperlink{_Toc217642084}{6}}
+
+\protect\hyperlink{axiom-1.-primacy-of-consciousness}{Axiom 1. Primacy
+of Consciousness
+\protect\hyperlink{axiom-1.-primacy-of-consciousness}{6}}
+
+\protect\hyperlink{axiom-2.-space-of-potential-states}{Axiom 2. Space of
+Potential States
+\protect\hyperlink{axiom-2.-space-of-potential-states}{6}}
+
+\protect\hyperlink{_Toc217642087}{Axiom 3. Ontological Indeterminacy
+(Primordial Emptiness) \protect\hyperlink{_Toc217642087}{6}}
+
+\protect\hyperlink{_Toc217642088}{Axiom 4. Differentiation as
+Information \protect\hyperlink{_Toc217642088}{6}}
+
+\protect\hyperlink{_Toc217642089}{Axiom 5. Bayesian Updating of
+Consciousness \protect\hyperlink{_Toc217642089}{7}}
+
+\protect\hyperlink{axiom-6.-emergence-of-time}{Axiom 6. Emergence of
+Time \protect\hyperlink{axiom-6.-emergence-of-time}{7}}
+
+\protect\hyperlink{axiom-7.-information-geometry-and-stability}{Axiom 7.
+Information Geometry and Stability
+\protect\hyperlink{axiom-7.-information-geometry-and-stability}{7}}
+
+\protect\hyperlink{axiom-8.-observer-as-a-localized-structure}{Axiom 8.
+Observer as a Localized Structure
+\protect\hyperlink{axiom-8.-observer-as-a-localized-structure}{7}}
+
+\protect\hyperlink{axiom-9.-quantization-of-differentiation}{Axiom 9.
+Quantization of Differentiation
+\protect\hyperlink{axiom-9.-quantization-of-differentiation}{7}}
+
+\protect\hyperlink{axiom-10.-reality-as-informational-dynamics}{Axiom
+10. Reality as Informational Dynamics
+\protect\hyperlink{axiom-10.-reality-as-informational-dynamics}{8}}
+
+\protect\hyperlink{metric-structure-of-the-space-of-conscious-states}{Metric
+Structure of the Space of Conscious States
+\protect\hyperlink{metric-structure-of-the-space-of-conscious-states}{9}}
+
+\protect\hyperlink{probability-simplex-of-consciousness}{Probability
+Simplex of Consciousness
+\protect\hyperlink{probability-simplex-of-consciousness}{9}}
+
+\protect\hyperlink{hellinger-distance}{Hellinger Distance
+\protect\hyperlink{hellinger-distance}{9}}
+
+\protect\hyperlink{_Toc217642098}{Ontological Interpretation of
+Hellinger Distance \protect\hyperlink{_Toc217642098}{9}}
+
+\protect\hyperlink{jensenshannon-divergence}{Jensen--Shannon Divergence
+\protect\hyperlink{jensenshannon-divergence}{10}}
+
+\protect\hyperlink{_Toc217642100}{Ontological Interpretation of
+Jensen--Shannon Metric \protect\hyperlink{_Toc217642100}{10}}
+
+\protect\hyperlink{relation-between-hellinger-and-js-metrics}{Relation
+Between Hellinger and JS Metrics
+\protect\hyperlink{relation-between-hellinger-and-js-metrics}{10}}
+
+\protect\hyperlink{information-geometry-of-consciousness}{Information
+Geometry of Consciousness
+\protect\hyperlink{information-geometry-of-consciousness}{10}}
+
+\protect\hyperlink{_Toc217642103}{Geodesics and Minimal Action
+\protect\hyperlink{_Toc217642103}{11}}
+
+\protect\hyperlink{emergence-of-physical-fields}{Emergence of Physical
+Fields \protect\hyperlink{emergence-of-physical-fields}{11}}
+
+\protect\hyperlink{derivation-of-a-schruxf6dinger-like-equation-from-geodesic-flow}{Derivation
+of a Schrödinger-like Equation from Geodesic Flow
+\protect\hyperlink{derivation-of-a-schruxf6dinger-like-equation-from-geodesic-flow}{12}}
+
+\protect\hyperlink{amplitude-representation-of-conscious-states}{Amplitude
+Representation of Conscious States
+\protect\hyperlink{amplitude-representation-of-conscious-states}{12}}
+
+\protect\hyperlink{hellinger-metric-and-hilbert-space-geometry}{Hellinger
+Metric and Hilbert Space Geometry
+\protect\hyperlink{hellinger-metric-and-hilbert-space-geometry}{12}}
+
+\protect\hyperlink{principle-of-minimal-informational-action}{Principle
+of Minimal Informational Action
+\protect\hyperlink{principle-of-minimal-informational-action}{12}}
+
+\protect\hyperlink{eulerlagrange-equations}{Euler--Lagrange Equations
+\protect\hyperlink{eulerlagrange-equations}{13}}
+
+\protect\hyperlink{emergence-of-first-order-dynamics}{Emergence of
+First-Order Dynamics
+\protect\hyperlink{emergence-of-first-order-dynamics}{13}}
+
+\protect\hyperlink{interpretation-of-the-hamiltonian}{Interpretation of
+the Hamiltonian
+\protect\hyperlink{interpretation-of-the-hamiltonian}{13}}
+
+\protect\hyperlink{schruxf6dinger-like-equation}{Schrödinger-like
+Equation \protect\hyperlink{schruxf6dinger-like-equation}{14}}
+
+\protect\hyperlink{probability-conservation}{Probability Conservation
+\protect\hyperlink{probability-conservation}{14}}
+
+\protect\hyperlink{physical-interpretation}{Physical Interpretation
+\protect\hyperlink{physical-interpretation}{14}}
+
+\protect\hyperlink{classical-limit}{Classical Limit
+\protect\hyperlink{classical-limit}{14}}
+
+\protect\hyperlink{summary-theorem}{Summary Theorem
+\protect\hyperlink{summary-theorem}{14}}
+
+\protect\hyperlink{derivation-of-the-born-rule-from-informational-geometry}{Derivation
+of the Born Rule from Informational Geometry
+\protect\hyperlink{derivation-of-the-born-rule-from-informational-geometry}{16}}
+
+\protect\hyperlink{statement-of-the-problem}{Statement of the Problem
+\protect\hyperlink{statement-of-the-problem}{16}}
+
+\protect\hyperlink{invariance-requirements}{Invariance Requirements
+\protect\hyperlink{invariance-requirements}{16}}
+
+\protect\hyperlink{geometric-interpretation}{Geometric Interpretation
+\protect\hyperlink{geometric-interpretation}{16}}
+
+\protect\hyperlink{functional-form-of-the-probability-measure}{Functional
+Form of the Probability Measure
+\protect\hyperlink{functional-form-of-the-probability-measure}{17}}
+
+\protect\hyperlink{normalization-and-the-born-rule}{Normalization and
+the Born Rule \protect\hyperlink{normalization-and-the-born-rule}{17}}
+
+\protect\hyperlink{bayesian-interpretation}{Bayesian Interpretation
+\protect\hyperlink{bayesian-interpretation}{17}}
+
+\protect\hyperlink{minimal-differentiation-principle}{Minimal
+Differentiation Principle
+\protect\hyperlink{minimal-differentiation-principle}{18}}
+
+\protect\hyperlink{ontological-interpretation}{Ontological
+Interpretation \protect\hyperlink{ontological-interpretation}{18}}
+
+\protect\hyperlink{theorem-born-rule-emergence}{Theorem (Born Rule
+Emergence) \protect\hyperlink{theorem-born-rule-emergence}{18}}
+
+\protect\hyperlink{emergence-of-spacetime-from-information-geometry}{Emergence
+of Spacetime from Information Geometry
+\protect\hyperlink{emergence-of-spacetime-from-information-geometry}{19}}
+
+\protect\hyperlink{informational-manifold-of-consciousness}{Informational
+Manifold of Consciousness
+\protect\hyperlink{informational-manifold-of-consciousness}{19}}
+
+\protect\hyperlink{observers-as-local-coordinate-charts}{Observers as
+Local Coordinate Charts
+\protect\hyperlink{observers-as-local-coordinate-charts}{19}}
+
+\protect\hyperlink{emergence-of-spatial-dimensions}{Emergence of Spatial
+Dimensions \protect\hyperlink{emergence-of-spatial-dimensions}{19}}
+
+\protect\hyperlink{emergence-of-time}{Emergence of Time
+\protect\hyperlink{emergence-of-time}{19}}
+
+\protect\hyperlink{relativistic-structure}{Relativistic Structure
+\protect\hyperlink{relativistic-structure}{20}}
+
+\protect\hyperlink{lorentz-transformations-as-reparameterizations}{Lorentz
+Transformations as Reparameterizations
+\protect\hyperlink{lorentz-transformations-as-reparameterizations}{20}}
+
+\protect\hyperlink{speed-of-light-as-information-bound}{Speed of Light
+as Information Bound
+\protect\hyperlink{speed-of-light-as-information-bound}{20}}
+
+\protect\hyperlink{mass-and-energy}{Mass and Energy
+\protect\hyperlink{mass-and-energy}{21}}
+
+\protect\hyperlink{curvature-and-gravity}{Curvature and Gravity
+\protect\hyperlink{curvature-and-gravity}{21}}
+
+\protect\hyperlink{emergent-einstein-equations-informational-form}{Emergent
+Einstein Equations (Informational Form)
+\protect\hyperlink{emergent-einstein-equations-informational-form}{21}}
+
+\protect\hyperlink{ontological-interpretation-1}{Ontological
+Interpretation \protect\hyperlink{ontological-interpretation-1}{21}}
+
+\protect\hyperlink{main-result}{Main Result
+\protect\hyperlink{main-result}{22}}
+
+\protect\hyperlink{derivation-of-einstein-equations-from-informational-gravity}{Derivation
+of Einstein Equations from Informational Gravity
+\protect\hyperlink{derivation-of-einstein-equations-from-informational-gravity}{23}}
+
+\protect\hyperlink{informational-action-principle}{Informational Action
+Principle \protect\hyperlink{informational-action-principle}{23}}
+
+\protect\hyperlink{geometric-informational-term}{Geometric Informational
+Term \protect\hyperlink{geometric-informational-term}{23}}
+
+\protect\hyperlink{informational-matter-term}{Informational Matter Term
+\protect\hyperlink{informational-matter-term}{23}}
+
+\protect\hyperlink{variational-principle}{Variational Principle
+\protect\hyperlink{variational-principle}{23}}
+
+\protect\hyperlink{variation-of-the-geometric-term}{Variation of the
+Geometric Term \protect\hyperlink{variation-of-the-geometric-term}{24}}
+
+\protect\hyperlink{variation-of-the-matter-term}{Variation of the Matter
+Term \protect\hyperlink{variation-of-the-matter-term}{24}}
+
+\protect\hyperlink{emergence-of-einstein-equations}{Emergence of
+Einstein Equations
+\protect\hyperlink{emergence-of-einstein-equations}{24}}
+
+\protect\hyperlink{interpretation-of-the-informational-stress-energy-tensor}{Interpretation
+of the Informational Stress-Energy Tensor
+\protect\hyperlink{interpretation-of-the-informational-stress-energy-tensor}{24}}
+
+\protect\hyperlink{principle-of-informational-equivalence}{Principle of
+Informational Equivalence
+\protect\hyperlink{principle-of-informational-equivalence}{24}}
+
+\protect\hyperlink{gravitational-motion}{Gravitational Motion
+\protect\hyperlink{gravitational-motion}{25}}
+
+\protect\hyperlink{entropy-area-and-gravity}{Entropy, Area, and Gravity
+\protect\hyperlink{entropy-area-and-gravity}{25}}
+
+\protect\hyperlink{main-theorem}{Main Theorem
+\protect\hyperlink{main-theorem}{25}}
+
+\protect\hyperlink{cosmology-the-first-differentiation}{Cosmology: The
+First Differentiation
+\protect\hyperlink{cosmology-the-first-differentiation}{26}}
+
+\protect\hyperlink{primordial-state-of-consciousness}{Primordial State
+of Consciousness
+\protect\hyperlink{primordial-state-of-consciousness}{26}}
+
+\protect\hyperlink{the-first-differentiation-event}{The First
+Differentiation Event
+\protect\hyperlink{the-first-differentiation-event}{26}}
+
+\protect\hyperlink{origin-of-time}{Origin of Time
+\protect\hyperlink{origin-of-time}{26}}
+
+\protect\hyperlink{initial-expansion-as-information-dispersion}{Initial
+Expansion as Information Dispersion
+\protect\hyperlink{initial-expansion-as-information-dispersion}{26}}
+
+\protect\hyperlink{emergence-of-spatial-dimensions-1}{Emergence of
+Spatial Dimensions
+\protect\hyperlink{emergence-of-spatial-dimensions-1}{27}}
+
+\protect\hyperlink{primordial-fluctuations}{Primordial Fluctuations
+\protect\hyperlink{primordial-fluctuations}{27}}
+
+\protect\hyperlink{emergence-of-matter-and-energy}{Emergence of Matter
+and Energy \protect\hyperlink{emergence-of-matter-and-energy}{27}}
+
+\protect\hyperlink{cosmological-equations}{Cosmological Equations
+\protect\hyperlink{cosmological-equations}{28}}
+
+\protect\hyperlink{inflation-as-symmetry-relaxation}{Inflation as
+Symmetry Relaxation
+\protect\hyperlink{inflation-as-symmetry-relaxation}{28}}
+
+\protect\hyperlink{dark-energy-as-residual-differentiation}{Dark Energy
+as Residual Differentiation
+\protect\hyperlink{dark-energy-as-residual-differentiation}{28}}
+
+\protect\hyperlink{absence-of-initial-singularity}{Absence of Initial
+Singularity \protect\hyperlink{absence-of-initial-singularity}{28}}
+
+\protect\hyperlink{entropy-and-the-arrow-of-time}{Entropy and the Arrow
+of Time \protect\hyperlink{entropy-and-the-arrow-of-time}{28}}
+
+\protect\hyperlink{multiverse-as-alternative-differentiations}{Multiverse
+as Alternative Differentiations
+\protect\hyperlink{multiverse-as-alternative-differentiations}{29}}
+
+\protect\hyperlink{main-cosmological-theorem}{Main Cosmological Theorem
+\protect\hyperlink{main-cosmological-theorem}{29}}
+
+\protect\hyperlink{emergence-of-self-awareness-as-an-informational-fixed-point}{Emergence
+of Self-Awareness as an Informational Fixed Point
+\protect\hyperlink{emergence-of-self-awareness-as-an-informational-fixed-point}{30}}
+
+\protect\hyperlink{self-reference-in-consciousness}{Self-Reference in
+Consciousness \protect\hyperlink{self-reference-in-consciousness}{30}}
+
+\protect\hyperlink{informational-observer}{Informational Observer
+\protect\hyperlink{informational-observer}{30}}
+
+\protect\hyperlink{recursive-bayesian-updating}{Recursive Bayesian
+Updating \protect\hyperlink{recursive-bayesian-updating}{30}}
+
+\protect\hyperlink{fixed-point-definition}{Fixed Point Definition
+\protect\hyperlink{fixed-point-definition}{30}}
+
+\protect\hyperlink{stability-of-the-fixed-point}{Stability of the Fixed
+Point \protect\hyperlink{stability-of-the-fixed-point}{31}}
+
+\protect\hyperlink{emergence-of-the-self-i}{Emergence of the Self
+(``I'') \protect\hyperlink{emergence-of-the-self-i}{31}}
+
+\protect\hyperlink{unity-of-experience}{Unity of Experience
+\protect\hyperlink{unity-of-experience}{31}}
+
+\protect\hyperlink{continuity-of-the-self}{Continuity of the Self
+\protect\hyperlink{continuity-of-the-self}{31}}
+
+\protect\hyperlink{boundaries-of-the-self}{Boundaries of the Self
+\protect\hyperlink{boundaries-of-the-self}{31}}
+
+\protect\hyperlink{free-will-as-informational-indeterminacy}{Free Will
+as Informational Indeterminacy
+\protect\hyperlink{free-will-as-informational-indeterminacy}{32}}
+
+\protect\hyperlink{relation-to-physical-brain}{Relation to Physical
+Brain \protect\hyperlink{relation-to-physical-brain}{32}}
+
+\protect\hyperlink{pathologies-and-dissolution-of-the-self}{Pathologies
+and Dissolution of the Self
+\protect\hyperlink{pathologies-and-dissolution-of-the-self}{32}}
+
+\protect\hyperlink{universality-of-the-self}{Universality of the Self
+\protect\hyperlink{universality-of-the-self}{32}}
+
+\protect\hyperlink{main-theorem-1}{Main Theorem
+\protect\hyperlink{main-theorem-1}{33}}
+
+\protect\hyperlink{observable-predictions-and-falsifiability}{Observable
+Predictions and Falsifiability
+\protect\hyperlink{observable-predictions-and-falsifiability}{34}}
+
+\protect\hyperlink{principle-of-empirical-adequacy}{Principle of
+Empirical Adequacy
+\protect\hyperlink{principle-of-empirical-adequacy}{34}}
+
+\protect\hyperlink{prediction-1-information-dependent-time-dilation}{Prediction
+1: Information-Dependent Time Dilation
+\protect\hyperlink{prediction-1-information-dependent-time-dilation}{34}}
+
+\protect\hyperlink{prediction-2-informational-contribution-to-inertial-mass}{Prediction
+2: Informational Contribution to Inertial Mass
+\protect\hyperlink{prediction-2-informational-contribution-to-inertial-mass}{34}}
+
+\protect\hyperlink{prediction-3-deviations-from-quantum-randomness}{Prediction
+3: Deviations from Quantum Randomness
+\protect\hyperlink{prediction-3-deviations-from-quantum-randomness}{35}}
+
+\protect\hyperlink{prediction-4-informational-origin-of-dark-energy}{Prediction
+4: Informational Origin of Dark Energy
+\protect\hyperlink{prediction-4-informational-origin-of-dark-energy}{35}}
+
+\protect\hyperlink{prediction-5-breakdown-of-spacetime-at-low-information-density}{Prediction
+5: Breakdown of Spacetime at Low Information Density
+\protect\hyperlink{prediction-5-breakdown-of-spacetime-at-low-information-density}{35}}
+
+\protect\hyperlink{prediction-6-consciousness-thresholds}{Prediction 6:
+Consciousness Thresholds
+\protect\hyperlink{prediction-6-consciousness-thresholds}{35}}
+
+\protect\hyperlink{prediction-7-irreducibility-of-subjective-experience}{Prediction
+7: Irreducibility of Subjective Experience
+\protect\hyperlink{prediction-7-irreducibility-of-subjective-experience}{36}}
+
+\protect\hyperlink{prediction-8-informational-limits-on-computation}{Prediction
+8: Informational Limits on Computation
+\protect\hyperlink{prediction-8-informational-limits-on-computation}{36}}
+
+\protect\hyperlink{experimental-accessibility}{Experimental
+Accessibility \protect\hyperlink{experimental-accessibility}{36}}
+
+\protect\hyperlink{comparison-with-existing-frameworks}{Comparison with
+Existing Frameworks
+\protect\hyperlink{comparison-with-existing-frameworks}{36}}
+
+\protect\hyperlink{conditions-of-falsification}{Conditions of
+Falsification \protect\hyperlink{conditions-of-falsification}{37}}
+
+\protect\hyperlink{scientific-status}{Scientific Status
+\protect\hyperlink{scientific-status}{37}}
+
+\protect\hyperlink{ethical-and-existential-implications-of-the-consciousness-driven-reality}{Ethical
+and Existential Implications of the Consciousness-Driven Reality
+\protect\hyperlink{ethical-and-existential-implications-of-the-consciousness-driven-reality}{38}}
+
+\protect\hyperlink{ethics-as-informational-coherence}{Ethics as
+Informational Coherence
+\protect\hyperlink{ethics-as-informational-coherence}{38}}
+
+\protect\hyperlink{good-and-harm}{Good and Harm
+\protect\hyperlink{good-and-harm}{38}}
+
+\protect\hyperlink{intrinsic-value-of-conscious-systems}{Intrinsic Value
+of Conscious Systems
+\protect\hyperlink{intrinsic-value-of-conscious-systems}{38}}
+
+\protect\hyperlink{responsibility-and-free-will}{Responsibility and Free
+Will \protect\hyperlink{responsibility-and-free-will}{39}}
+
+\protect\hyperlink{suffering}{Suffering
+\protect\hyperlink{suffering}{39}}
+
+\protect\hyperlink{meaning-of-life}{Meaning of Life
+\protect\hyperlink{meaning-of-life}{39}}
+
+\protect\hyperlink{death}{Death \protect\hyperlink{death}{39}}
+
+\protect\hyperlink{ego-and-transcendence}{Ego and Transcendence
+\protect\hyperlink{ego-and-transcendence}{40}}
+
+\protect\hyperlink{ethics-of-technology-and-ai}{Ethics of Technology and
+AI \protect\hyperlink{ethics-of-technology-and-ai}{40}}
+
+\protect\hyperlink{cosmic-ethics}{Cosmic Ethics
+\protect\hyperlink{cosmic-ethics}{40}}
+
+\protect\hyperlink{existential-anxiety-and-reconciliation}{Existential
+Anxiety and Reconciliation
+\protect\hyperlink{existential-anxiety-and-reconciliation}{40}}
+
+\protect\hyperlink{ultimate-ethical-principle}{Ultimate Ethical
+Principle \protect\hyperlink{ultimate-ethical-principle}{41}}
+
+\protect\hyperlink{final-remark}{Final Remark
+\protect\hyperlink{final-remark}{41}}
+
+\protect\hyperlink{list-of-symbols-and-notation}{List of Symbols and
+Notation \protect\hyperlink{list-of-symbols-and-notation}{42}}
+
+\protect\hyperlink{foundational-ontology}{Foundational Ontology
+\protect\hyperlink{foundational-ontology}{42}}
+
+\protect\hyperlink{information-theory}{Information Theory
+\protect\hyperlink{information-theory}{42}}
+
+\protect\hyperlink{information-geometry}{Information Geometry
+\protect\hyperlink{information-geometry}{42}}
+
+\protect\hyperlink{quantum-formalism}{Quantum Formalism
+\protect\hyperlink{quantum-formalism}{42}}
+
+\protect\hyperlink{observer-and-self}{Observer and Self
+\protect\hyperlink{observer-and-self}{43}}
+
+\protect\hyperlink{dynamics-and-bayesian-updating}{Dynamics and Bayesian
+Updating \protect\hyperlink{dynamics-and-bayesian-updating}{43}}
+
+\protect\hyperlink{spacetime-emergence}{Spacetime Emergence
+\protect\hyperlink{spacetime-emergence}{43}}
+
+\protect\hyperlink{gravitation}{Gravitation
+\protect\hyperlink{gravitation}{43}}
+
+\protect\hyperlink{cosmology}{Cosmology
+\protect\hyperlink{cosmology}{44}}
+
+\protect\hyperlink{ethics-and-existential-quantities}{Ethics and
+Existential Quantities
+\protect\hyperlink{ethics-and-existential-quantities}{44}}
+
+\protect\hyperlink{limits-and-constants}{Limits and Constants
+\protect\hyperlink{limits-and-constants}{44}}
+
+\protect\hyperlink{general-notation}{General Notation
+\protect\hyperlink{general-notation}{44}}
+
+\protect\hyperlink{glossary}{Glossary \protect\hyperlink{glossary}{46}}
+
+\protect\hyperlink{references}{References
+\protect\hyperlink{references}{49}}
+
+\hypertarget{axiomatic-foundations-of-the-consciousness-driven-reality-model}{%
+\section{Axiomatic Foundations of the Consciousness-Driven Reality
+Model}\label{axiomatic-foundations-of-the-consciousness-driven-reality-model}}
+
+\hypertarget{axiom-1.-primacy-of-consciousness}{%
+\subsection{Axiom 1. Primacy of
+Consciousness}\label{axiom-1.-primacy-of-consciousness}}
+
+Consciousness is the fundamental and irreducible reality. All that
+exists is contained within Consciousness. There is no ontologically
+independent external reality beyond it.
+
+\[\mathcal{C}\mspace{6mu}\text{is\ the\ totality\ of\ existence}\]
+
+\hypertarget{axiom-2.-space-of-potential-states}{%
+\subsection{Axiom 2. Space of Potential
+States}\label{axiom-2.-space-of-potential-states}}
+
+Consciousness possesses a space of potential states
+
+\[\mathcal{S = \{}s_{i}\},\]
+
+where each \(s_{i}\) represents a possible configuration of meaning or
+knowledge. At any moment, Consciousness is described by a probability
+distribution
+
+\[P(s),\quad s\mathcal{\in S.}\]
+
+\hypertarget{axiom-3.-ontological-indeterminacy-primordial-emptiness}{%
+\subsection{Axiom 3. Ontological Indeterminacy (Primordial
+Emptiness)}\label{axiom-3.-ontological-indeterminacy-primordial-emptiness}}
+
+The primordial state of Consciousness is maximally undifferentiated. It
+is characterized by maximal entropy and the absence of preferred states:
+
+\[P_{0}(s) = \text{const},\quad\forall s \in \mathcal{S}.\]
+
+This state corresponds to ontological Emptiness, not to non-existence.
+
+\hypertarget{axiom-4.-differentiation-as-information}{%
+\subsection{Axiom 4. Differentiation as
+Information}\label{axiom-4.-differentiation-as-information}}
+
+Any form, distinction, or phenomenon arises through differentiation.
+Differentiation is an internal transformation of Consciousness that
+generates informational structure.
+
+A differentiation event is represented as:
+
+\[E:s_{0} \rightarrow \{ s_{i}\mathcal{\} \subset S.}\]
+
+Each differentiation event induces a non-zero measure of informational
+distinction:
+
+\[\mathcal{I}(E) > 0,\]
+
+where \(\mathcal{I}\) is an abstract information functional quantifying
+distinguishability between informational states.
+
+The specific mathematical realization of \(\mathcal{I}\) is introduced
+in the section \emph{Metric Structure of the Space of Conscious States}.
+
+\hypertarget{axiom-5.-bayesian-updating-of-consciousness}{%
+\subsection{Axiom 5. Bayesian Updating of
+Consciousness}\label{axiom-5.-bayesian-updating-of-consciousness}}
+
+The evolution of Consciousness follows Bayesian updating. Upon
+differentiation event \(E\), the state of Consciousness is updated as:
+
+\[P(s \mid E) = \frac{P(E \mid s)\, P(s)}{P(E)}.\]
+
+This rule governs all ontological dynamics.
+
+\hypertarget{axiom-6.-emergence-of-time}{%
+\subsection{Axiom 6. Emergence of
+Time}\label{axiom-6.-emergence-of-time}}
+
+Time is not fundamental. Time emerges as an ordered sequence of Bayesian
+updates:
+
+\[t \equiv \{ P_{0} \rightarrow P_{1} \rightarrow P_{2} \rightarrow \ldots\}.\]
+
+The direction of time corresponds to increasing informational
+differentiation.
+
+\hypertarget{axiom-7.-information-geometry-and-stability}{%
+\subsection{Axiom 7. Information Geometry and
+Stability}\label{axiom-7.-information-geometry-and-stability}}
+
+Consciousness tends toward states that minimize internal informational
+tension. The stability of forms is governed by the minimization of
+information divergence, such as the Kullback--Leibler divergence:
+
+\[D_{KL}\left( P_{n + 1} \parallel P_{n} \right) \rightarrow min.\]
+
+Stable structures correspond to persistent informational configurations.
+
+\hypertarget{axiom-8.-observer-as-a-localized-structure}{%
+\subsection{Axiom 8. Observer as a Localized
+Structure}\label{axiom-8.-observer-as-a-localized-structure}}
+
+An observer is a localized, self-consistent informational structure
+within Consciousness, characterized by a restricted probability
+distribution \(P_{O}(s)\) and a subset of admissible events
+\(\mathcal{E}_{O}\).
+
+\[O = \{ P_{O}(s),\mathcal{E}_{O}\}.\]
+
+There is no observer-independent reality.
+
+\hypertarget{axiom-9.-quantization-of-differentiation}{%
+\subsection{Axiom 9. Quantization of
+Differentiation}\label{axiom-9.-quantization-of-differentiation}}
+
+Differentiation occurs in discrete minimal acts. The minimal unit of
+information is given by:
+
+\[\Delta I_{\min} = - logP(s).\]
+
+This discreteness gives rise to quantum phenomena.
+
+\hypertarget{axiom-10.-reality-as-informational-dynamics}{%
+\subsection{Axiom 10. Reality as Informational
+Dynamics}\label{axiom-10.-reality-as-informational-dynamics}}
+
+Physical reality is the emergent, stable pattern of Bayesian dynamics
+within Consciousness.
+
+\[\text{Reality} \equiv \text{Dynamics}\left( P(s),E \right).\]
+
+All physical laws are effective descriptions of this deeper
+informational process.
+
+\hypertarget{metric-structure-of-the-space-of-conscious-states}{%
+\section{Metric Structure of the Space of Conscious
+States}\label{metric-structure-of-the-space-of-conscious-states}}
+
+\hypertarget{probability-simplex-of-consciousness}{%
+\subsection{Probability Simplex of
+Consciousness}\label{probability-simplex-of-consciousness}}
+
+Let \(\mathcal{S} = \{ s_{1},s_{2},\ldots,s_{n}\}\) be the space of
+potential states of Consciousness. Any ontological state of
+Consciousness is represented by a probability distribution
+
+\[P = \left( p_{1},p_{2},\ldots,p_{n} \right),\quad\sum_{i = 1}^{n}p_{i} = 1,\quad p_{i} \geq 0.\]
+
+The space of all such distributions forms a probability simplex
+
+\[\Delta^{n - 1} \subset \mathbb{R}^{n}.\]
+
+\hypertarget{shannon-entropy-as-a-measure-of-differentiation}{%
+\subsection{Shannon Entropy as a Measure of
+Differentiation}\label{shannon-entropy-as-a-measure-of-differentiation}}
+
+A natural realization of the information functional \(\mathcal{I}\) is
+given by Shannon entropy:
+
+\[\mathcal{I}(E) = H\left( P_{\text{after}} \right) - H\left( P_{\text{before}} \right),\]
+
+with
+
+\[H(P) = - \sum_{i}^{}P\left( s_{i} \right)\log P\left( s_{i} \right).\]
+
+\hypertarget{hellinger-distance}{%
+\subsection{Hellinger Distance}\label{hellinger-distance}}
+
+We define the Hellinger distance between two states of Consciousness
+\(P = \left( p_{i} \right)\) and \(Q = \left( q_{i} \right)\) as:
+
+\[H(P,Q) = \frac{1}{\sqrt{2}}\left( \sum_{i = 1}^{n}\left( \sqrt{p_{i}} - \sqrt{q_{i}} \right)^{2} \right)^{1/2}.\]
+
+\textbf{Properties:}
+
+\begin{itemize}
+\item
+  \(0 \leq H(P,Q) \leq 1\)
+\item
+  \(H(P,Q) = 0 \Leftrightarrow P = Q\)
+\item
+  Symmetric and satisfies the triangle inequality
+\item
+  Invariant under reparameterization
+\end{itemize}
+
+The Hellinger distance measures the \emph{degree of differentiation}
+between two states of Consciousness.
+
+\[H(P,Q) = \text{ontological\ distance\ between\ meanings}.\]
+
+Infinitesimal Hellinger distance corresponds to minimal acts of
+differentiation, i.e., quantum-level transitions.
+
+\hypertarget{jensenshannon-divergence}{%
+\subsection{Jensen--Shannon Divergence}\label{jensenshannon-divergence}}
+
+An alternative metric-compatible measure is the Jensen--Shannon
+divergence:
+
+\[JS(P \parallel Q) = \frac{1}{2}D_{KL}(P \parallel M) + \frac{1}{2}D_{KL}(Q \parallel M),\quad M = \frac{1}{2}(P + Q).\]
+
+The square root of the JS divergence defines a true metric:
+
+\[d_{JS}(P,Q) = \sqrt{JS(P \parallel Q)}.\]
+
+The JS metric quantifies the \emph{informational separability} between
+two conscious states.
+
+\[d_{JS}(P,Q) = \text{degree\ of\ mutual\ distinguishability\ of\ meanings}.\]
+
+Unlike KL divergence, the JS metric is:
+
+\begin{itemize}
+\item
+  Finite
+\item
+  Symmetric
+\item
+  Well-defined even for disjoint supports
+\end{itemize}
+
+\hypertarget{relation-between-hellinger-and-js-metrics}{%
+\subsection{Relation Between Hellinger and JS
+Metrics}\label{relation-between-hellinger-and-js-metrics}}
+
+For nearby states \(P\) and \(Q\), the metrics are locally equivalent:
+
+\[JS(P,Q) \approx 2H^{2}(P,Q).\]
+
+Thus, both induce the same local geometry on \(\mathcal{S}\).
+
+\hypertarget{information-geometry-of-consciousness}{%
+\subsection{Information Geometry of
+Consciousness}\label{information-geometry-of-consciousness}}
+
+The space of conscious informational states \(\mathcal{S}\) is
+identified with a manifold of probability distributions \(P(s;\theta)\).
+
+Equipped with an information-theoretic distance such as the Hellinger
+distance or Jensen--Shannon divergence, \(\mathcal{S}\) acquires a
+natural Riemannian structure.
+
+In the limit of infinitesimal variations, these distances induce the
+Fisher information metric:
+
+\[ds^{2} = g_{ij}\, d\theta^{i}d\theta^{j},\quad g_{ij}\mathbb{= E}\left\lbrack \frac{\partial logP}{\partial\theta^{i}}\frac{\partial logP}{\partial\theta^{j}} \right\rbrack.\]
+
+The resulting Riemannian manifold \(\left( \mathcal{S},g \right)\)
+governs all admissible dynamical trajectories of Consciousness, which
+correspond to geodesic flows in information space.
+
+\hypertarget{geodesic-dynamics}{%
+\subsection{Geodesic Dynamics}\label{geodesic-dynamics}}
+
+A geodesic is the path by which Consciousness changes as little as
+possible while still changing.
+
+In the information-geometric formulation, the evolution of conscious
+states corresponds to geodesic flow on the manifold
+\(\left( \mathcal{S},g \right)\).
+
+Geodesics represent trajectories of minimal informational change,
+governed solely by the intrinsic geometry of the space of distinctions.
+
+No external time parameter or force is assumed; the parameter along the
+geodesic indexes successive informational updates.
+
+The evolution of Consciousness follows geodesics in \(\mathcal{S}\) with
+respect to the chosen metric:
+
+\[\delta\int H\left( P(t),P(t + dt) \right)\, dt = 0.\]
+
+Stable physical laws correspond to geodesically stable trajectories in
+the information geometry of Consciousness.
+
+\hypertarget{emergence-of-physical-fields}{%
+\subsection{Emergence of Physical
+Fields}\label{emergence-of-physical-fields}}
+
+Curvature of the manifold \(\left( \mathcal{S},g \right)\) corresponds
+to informational tension.
+
+\[\mathcal{R \neq}0\quad \Rightarrow \quad\text{interaction\ /\ force}.\]
+
+In particular:
+
+\begin{itemize}
+\item
+  Flat regions correspond to free evolution
+\item
+  Curvature corresponds to mass and interaction
+\end{itemize}
+
+\hypertarget{derivation-of-a-schruxf6dinger-like-equation-from-geodesic-flow}{%
+\section{Derivation of a Schrödinger-like Equation from Geodesic
+Flow}\label{derivation-of-a-schruxf6dinger-like-equation-from-geodesic-flow}}
+
+\hypertarget{amplitude-representation-of-conscious-states}{%
+\subsection{Amplitude Representation of Conscious
+States}\label{amplitude-representation-of-conscious-states}}
+
+Let the state of Consciousness be represented by a probability
+distribution
+
+\[P(s,t) = \{ p_{i}(t)\},\quad\sum_{i}^{}p_{i}(t) = 1.\]
+
+Introduce probability amplitudes
+
+\[\psi_{i}(t) = \sqrt{p_{i}(t)}\, e^{i\phi_{i}(t)},\]
+
+where \(\phi_{i}(t)\) is a phase encoding relational information between
+states.
+
+The normalization condition becomes
+
+\[\sum_{i}^{}\left| \psi_{i} \right|^{2} = 1.\]
+
+Thus, Consciousness is represented as a point on a unit sphere in
+Hilbert space
+
+\[\mathcal{H =}L^{2}\left( \mathcal{S} \right).\]
+
+\hypertarget{hellinger-metric-and-hilbert-space-geometry}{%
+\subsection{Hellinger Metric and Hilbert Space
+Geometry}\label{hellinger-metric-and-hilbert-space-geometry}}
+
+The squared Hellinger distance between two infinitesimally close states
+\(P(t)\) and \(P(t + dt)\) is
+
+\[ds^{2} = \frac{1}{2}\sum_{i}^{}\left( d\sqrt{p_{i}} \right)^{2}.\]
+
+In amplitude form:
+
+\[ds^{2} = \sum_{i}^{}\left| d\psi_{i} \right|^{2},\]
+
+which is the Fubini--Study metric on \(\mathcal{H}\).
+
+Thus, the geometry of Consciousness coincides with the geometry of
+quantum states.
+
+\hypertarget{principle-of-minimal-informational-action}{%
+\subsection{Principle of Minimal Informational
+Action}\label{principle-of-minimal-informational-action}}
+
+Postulate that the evolution of Consciousness follows geodesics that
+minimize the informational action:
+
+\[\mathcal{A = \int}ds = \int\left( \sum_{i}^{}\left| {\dot{\psi}}_{i} \right|^{2} \right)^{1/2}dt.\]
+
+Equivalently, minimize the quadratic action:
+
+\[\mathcal{A = \int}\sum_{i}^{}\left| {\dot{\psi}}_{i} \right|^{2}\, dt.\]
+
+\hypertarget{eulerlagrange-equations}{%
+\subsection{Euler--Lagrange Equations}\label{eulerlagrange-equations}}
+
+The Lagrangian is
+
+\[\mathcal{L =}\sum_{i}^{}{\dot{\psi}}_{i}^{*}{\dot{\psi}}_{i}.\]
+
+Applying the Euler--Lagrange equations yields:
+
+\[\frac{d^{2}\psi_{i}}{dt^{2}} = 0.\]
+
+This corresponds to free geodesic motion in Hilbert space.
+
+\hypertarget{emergence-of-first-order-dynamics}{%
+\subsection{Emergence of First-Order
+Dynamics}\label{emergence-of-first-order-dynamics}}
+
+To obtain physically meaningful evolution, impose invariance under
+global phase transformations:
+
+\[\psi \rightarrow e^{i\alpha}\psi.\]
+
+This reduces the second-order equation to a first-order form by
+introducing a generator \(\widehat{H}\) such that:
+
+\[i\frac{d}{dt}\psi = \widehat{H}\psi.\]
+
+\hypertarget{interpretation-of-the-hamiltonian}{%
+\subsection{Interpretation of the
+Hamiltonian}\label{interpretation-of-the-hamiltonian}}
+
+The operator \(\widehat{H}\) emerges as the generator of geodesic flow
+under informational constraints.
+
+It encodes:
+
+\begin{itemize}
+\item
+  curvature of the informational manifold,
+\item
+  coupling between differentiated states,
+\item
+  stability of persistent structures.
+\end{itemize}
+
+\hypertarget{schruxf6dinger-like-equation}{%
+\subsection{Schrödinger-like
+Equation}\label{schruxf6dinger-like-equation}}
+
+The resulting evolution equation for Consciousness is:
+
+\[i\frac{\partial}{\partial t}\psi(s,t) = \widehat{H}\psi(s,t).\]
+
+This equation is structurally identical to the Schrödinger equation, but
+here it arises from informational geometry rather than physical
+postulates.
+
+\hypertarget{probability-conservation}{%
+\subsection{Probability Conservation}\label{probability-conservation}}
+
+Taking the modulus squared yields:
+
+\[\frac{d}{dt}\sum_{s}^{}\left| \psi(s,t) \right|^{2} = 0,\]
+
+ensuring conservation of total probability.
+
+\hypertarget{physical-interpretation}{%
+\subsection{Physical Interpretation}\label{physical-interpretation}}
+
+\begin{itemize}
+\item
+  The wavefunction \(\psi\) is a state of Consciousness, not a physical
+  object.
+\item
+  The Hamiltonian represents informational constraints.
+\item
+  Measurement corresponds to Bayesian updating.
+\item
+  Collapse is not physical, but epistemic reconfiguration.
+\end{itemize}
+
+\hypertarget{classical-limit}{%
+\subsection{Classical Limit}\label{classical-limit}}
+
+In the limit of large-scale stable structures, phase variations become
+slow and probability distributions narrow.
+
+The Schrödinger-like equation reduces to classical Bayesian dynamics
+with minimal information flow.
+
+\hypertarget{summary-theorem}{%
+\subsection{Summary Theorem}\label{summary-theorem}}
+
+Theorem. Given:
+
+\begin{itemize}
+\item
+  Consciousness as a probability field,
+\item
+  Hellinger/Fisher metric on \(\mathcal{S}\),
+\item
+  geodesic evolution minimizing informational action,
+\item
+  the dynamics of Consciousness is governed by a Schrödinger-like
+  equation.
+\end{itemize}
+
+\hypertarget{derivation-of-the-born-rule-from-informational-geometry}{%
+\section{Derivation of the Born Rule from Informational
+Geometry}\label{derivation-of-the-born-rule-from-informational-geometry}}
+
+\hypertarget{statement-of-the-problem}{%
+\subsection{Statement of the Problem}\label{statement-of-the-problem}}
+
+Let the state of Consciousness be represented by a normalized vector
+
+\[\psi = \{\psi_{i}\mathcal{\} \in H,}\quad\sum_{i}^{}\left| \psi_{i} \right|^{2} = 1.\]
+
+A measurement corresponds to a differentiation event \(E_{i}\) selecting
+a particular state \(s_{i} \in \mathcal{S}\).
+
+We seek a function
+
+\[\mu\mathcal{:H \rightarrow}\lbrack 0,1\rbrack\]
+
+assigning probabilities to outcomes such that:
+
+\[\sum_{i}^{}\mu\left( \psi_{i} \right) = 1.\]
+
+\hypertarget{invariance-requirements}{%
+\subsection{Invariance Requirements}\label{invariance-requirements}}
+
+The probability assignment must satisfy:
+
+Phase invariance:
+
+\[\mu\left( e^{i\theta}\psi_{i} \right) = \mu\left( \psi_{i} \right).\]
+
+Continuity: \(\mu\) is a continuous function of \(\psi\).
+
+Additivity for orthogonal states: For mutually exclusive (orthogonal)
+states,
+
+\[\mu\left( \psi_{1} \oplus \psi_{2} \right) = \mu\left( \psi_{1} \right) + \mu\left( \psi_{2} \right).\]
+
+Normalization:
+
+\[\sum_{i}^{}\mu\left( \psi_{i} \right) = 1.\]
+
+\hypertarget{geometric-interpretation}{%
+\subsection{Geometric Interpretation}\label{geometric-interpretation}}
+
+The natural distance on \(\mathcal{H}\) is given by the Fubini--Study
+metric:
+
+\[ds^{2} = \sum_{i}^{}\left| d\psi_{i} \right|^{2}.\]
+
+Probabilities must therefore depend only on metric-invariant quantities.
+
+The only scalar invariant under phase transformations is
+
+\[\left| \psi_{i} \right|^{2}.\]
+
+\hypertarget{functional-form-of-the-probability-measure}{%
+\subsection{Functional Form of the Probability
+Measure}\label{functional-form-of-the-probability-measure}}
+
+Assume:
+
+\[\mu\left( \psi_{i} \right) = f\left( \left| \psi_{i} \right| \right).\]
+
+Additivity for orthogonal states requires:
+
+\[f\left( \sqrt{a^{2} + b^{2}} \right) = f(a) + f(b).\]
+
+The only continuous solution to this functional equation is:
+
+\[f(x) = kx^{2}.\]
+
+\hypertarget{normalization-and-the-born-rule}{%
+\subsection{Normalization and the Born
+Rule}\label{normalization-and-the-born-rule}}
+
+Normalization implies:
+
+\[\sum_{i}^{}k\left| \psi_{i} \right|^{2} = 1.\]
+
+Since \(\sum_{i}^{}\left| \psi_{i} \right|^{2} = 1\), it follows that
+\(k = 1\).
+
+Thus:
+
+\[\boxed{\mu\left( \psi_{i} \right) = \left| \psi_{i} \right|^{2}}\]
+
+This is the Born rule.
+
+\hypertarget{bayesian-interpretation}{%
+\subsection{Bayesian Interpretation}\label{bayesian-interpretation}}
+
+The Born rule coincides with the Bayesian probability assignment:
+
+\[P\left( s_{i} \mid \psi \right) = \left| \psi_{i} \right|^{2}.\]
+
+Measurement is therefore a Bayesian update of Consciousness:
+
+\[P_{\text{new}}(s) = P(s \mid E).\]
+
+There is no physical collapse, only informational reconfiguration.
+
+\hypertarget{minimal-differentiation-principle}{%
+\subsection{Minimal Differentiation
+Principle}\label{minimal-differentiation-principle}}
+
+The Born rule minimizes the expected informational disturbance:
+
+\[\mathbb{E}\lbrack\Delta I\rbrack = \sum_{i}^{}\left| \psi_{i} \right|^{2}\left( - log\left| \psi_{i} \right|^{2} \right).\]
+
+Any other probability rule increases informational divergence.
+
+\hypertarget{ontological-interpretation}{%
+\subsection{Ontological
+Interpretation}\label{ontological-interpretation}}
+
+\begin{itemize}
+\item
+  \(|\psi|^{2}\) measures informational weight.
+\item
+  Measurement selects a branch consistent with maximal informational
+  coherence.
+\item
+  Randomness reflects internal indeterminacy of Consciousness, not
+  physical noise.
+\end{itemize}
+
+\hypertarget{theorem-born-rule-emergence}{%
+\subsection{Theorem (Born Rule
+Emergence)}\label{theorem-born-rule-emergence}}
+
+Theorem. Given:
+
+\begin{itemize}
+\item
+  Consciousness represented in Hilbert space,
+\item
+  Hellinger/Fubini--Study geometry,
+\item
+  invariance under phase and orthogonality,
+\end{itemize}
+
+the unique consistent probability assignment is
+
+\[P = |\psi|^{2}.\]
+
+The Born rule is therefore a geometric and informational necessity.
+
+\hypertarget{emergence-of-spacetime-from-information-geometry}{%
+\section{Emergence of Spacetime from Information
+Geometry}\label{emergence-of-spacetime-from-information-geometry}}
+
+\hypertarget{informational-manifold-of-consciousness}{%
+\subsection{Informational Manifold of
+Consciousness}\label{informational-manifold-of-consciousness}}
+
+Let the space of conscious states \(\mathcal{S}\) be endowed with a
+Riemannian metric \(g_{ij}\) induced by the Fisher information metric:
+
+\[g_{ij}\mathbb{= E}\left\lbrack \frac{\partial logp\left( s|\theta \right)}{\partial\theta_{i}}\frac{\partial logp\left( s|\theta \right)}{\partial\theta_{j}} \right\rbrack.\]
+
+The pair \(\left( \mathcal{S},g \right)\) defines an informational
+manifold.
+
+\hypertarget{observers-as-local-coordinate-charts}{%
+\subsection{Observers as Local Coordinate
+Charts}\label{observers-as-local-coordinate-charts}}
+
+An observer \(O\) corresponds to a localized, stable probability
+distribution \(P_{O}(s)\) with restricted access to \(\mathcal{S}\).
+
+Thus, each observer induces a local coordinate chart:
+
+\[\varphi_{O}\mathcal{:S \supset}U_{O} \rightarrow \mathbb{R}^{4}.\]
+
+Physical spacetime is an emergent coordinate representation of local
+informational neighborhoods.
+
+\hypertarget{emergence-of-spatial-dimensions}{%
+\subsection{Emergence of Spatial
+Dimensions}\label{emergence-of-spatial-dimensions}}
+
+Define distinguishability between neighboring states by the metric
+distance:
+
+\[ds^{2} = g_{ij}d\theta^{i}d\theta^{j}.\]
+
+Independent directions of minimal distinguishability define effective
+spatial dimensions.
+
+\[\text{dim}\left( \text{space} \right) = \text{rank}\left( g_{ij}^{\text{spatial}} \right).\]
+
+Spatial extension corresponds to stable degrees of freedom along which
+informational change is slow.
+
+\hypertarget{emergence-of-time}{%
+\subsection{Emergence of Time}\label{emergence-of-time}}
+
+Time is identified with monotonic increase of informational
+differentiation:
+
+\[d\tau \propto \sqrt{D_{KL}\left( P(t + dt) \parallel P(t) \right)}.\]
+
+Thus, proper time is an intrinsic informational measure:
+
+\[\tau = \int\sqrt{g_{ij}{\dot{\theta}}^{i}{\dot{\theta}}^{j}}\, dt.\]
+
+Different observers experience different rates of informational change.
+
+\hypertarget{relativistic-structure}{%
+\subsection{Relativistic Structure}\label{relativistic-structure}}
+
+Let two observers \(O_{1}\) and \(O_{2}\) correspond to different
+informational trajectories \(\gamma_{1}(t)\) and \(\gamma_{2}(t)\) on
+\(\mathcal{S}\).
+
+The invariant interval between events is:
+
+\[ds^{2} = c^{2}d\tau^{2} - dl^{2},\]
+
+where:
+
+\begin{itemize}
+\item
+  \(d\tau\) is informational proper time,
+\item
+  \(dl\) is informational spatial separation.
+\item
+  This defines an emergent Lorentzian metric.
+\end{itemize}
+
+\hypertarget{lorentz-transformations-as-reparameterizations}{%
+\subsection{Lorentz Transformations as
+Reparameterizations}\label{lorentz-transformations-as-reparameterizations}}
+
+Changes of observer correspond to reparameterizations preserving the
+informational interval:
+
+\[ds^{2} = g_{\mu\nu}dx^{\mu}dx^{\nu} = \text{invariant}.\]
+
+Lorentz transformations arise as symmetry transformations preserving
+informational distinguishability.
+
+\hypertarget{speed-of-light-as-information-bound}{%
+\subsection{Speed of Light as Information
+Bound}\label{speed-of-light-as-information-bound}}
+
+Define \(c\) as the maximal rate of causal informational propagation:
+
+\[\left. \parallel\frac{dP}{d\tau} \right.\parallel \leq c.\]
+
+This bound emerges from:
+
+\begin{itemize}
+\item
+  finite informational bandwidth,
+\item
+  minimal differentiation scale,
+\item
+  causal consistency of Bayesian updates.
+\end{itemize}
+
+Thus, \(c\) is not a physical constant but an informational limit.
+
+\hypertarget{mass-and-energy}{%
+\subsection{Mass and Energy}\label{mass-and-energy}}
+
+Define informational mass as resistance to redistribution in probability
+space:
+
+\[m \propto \int P(s)\,\log P(s)\, ds.\]
+
+Energy corresponds to the rate of informational change:
+
+\[E \propto \frac{d}{d\tau}\left( \text{information} \right).\]
+
+This yields the relation:
+
+\[E = mc^{2}\]
+
+as an informational identity.
+
+\hypertarget{curvature-and-gravity}{%
+\subsection{Curvature and Gravity}\label{curvature-and-gravity}}
+
+Curvature of spacetime corresponds to curvature of the informational
+manifold:
+
+\[R_{\mu\nu\rho\sigma} \neq 0\quad \Leftrightarrow \quad\text{informational\ inhomogeneity}.\]
+
+Free motion follows informational geodesics:
+
+\[\delta\int d\tau = 0.\]
+
+This reproduces the principle of equivalence.
+
+\hypertarget{emergent-einstein-equations-informational-form}{%
+\subsection{Emergent Einstein Equations (Informational
+Form)}\label{emergent-einstein-equations-informational-form}}
+
+Postulate that informational curvature is sourced by informational
+energy density:
+
+\[G_{\mu\nu} = \kappa\, T_{\mu\nu}^{\text{info}}.\]
+
+Where:
+
+\(G_{\mu\nu}\) --- curvature of emergent spacetime,
+
+\(T_{\mu\nu}^{\text{info}}\) --- informational stress-energy tensor.
+
+\hypertarget{ontological-interpretation-1}{%
+\subsection{Ontological
+Interpretation}\label{ontological-interpretation-1}}
+
+\begin{itemize}
+\item
+  Spacetime is not fundamental.
+\item
+  Geometry emerges from distinguishability of meanings.
+\item
+  Relativity reflects observer-dependent informational access.
+\item
+  Gravity is informational curvature.
+\end{itemize}
+
+\hypertarget{main-result}{%
+\subsection{Main Result}\label{main-result}}
+
+Theorem. Given:
+
+\begin{itemize}
+\item
+  Consciousness as an informational manifold,
+\item
+  Fisher/Hellinger geometry,
+\item
+  geodesic Bayesian dynamics,
+\end{itemize}
+
+spacetime and relativistic structure emerge as effective descriptions of
+informational relations between differentiated states.
+
+\hypertarget{derivation-of-einstein-equations-from-informational-gravity}{%
+\section{Derivation of Einstein Equations from Informational
+Gravity}\label{derivation-of-einstein-equations-from-informational-gravity}}
+
+\hypertarget{informational-action-principle}{%
+\subsection{Informational Action
+Principle}\label{informational-action-principle}}
+
+Let spacetime \(\left( \mathcal{M,}g_{\mu\nu} \right)\) be an emergent
+manifold induced by the information geometry of Consciousness.
+
+Postulate that the fundamental action is informational and given by:
+
+\[\mathcal{S}_{\text{info}} = \int_{\mathcal{M}}^{}\left( \mathcal{I}_{\text{geom}} + \mathcal{I}_{\text{matter}} \right)\sqrt{- g}\, d^{4}x.\]
+
+\hypertarget{geometric-informational-term}{%
+\subsection{Geometric Informational
+Term}\label{geometric-informational-term}}
+
+The geometric contribution corresponds to informational curvature:
+
+\[\mathcal{I}_{\text{geom}} = \frac{1}{2\kappa}R,\]
+
+where:
+
+\begin{itemize}
+\item
+  \(R\) is the Ricci scalar of the emergent spacetime,
+\item
+  \(\kappa\) is the informational coupling constant.
+\end{itemize}
+
+This term measures the global distinguishability structure of
+Consciousness.
+
+\hypertarget{informational-matter-term}{%
+\subsection{Informational Matter Term}\label{informational-matter-term}}
+
+Matter corresponds to localized, stable informational structures
+(resistant to redistribution in probability space).
+
+Define the informational matter Lagrangian:
+
+\[\mathcal{I}_{\text{matter}} = \mathcal{L}_{\text{info}}(P,\nabla P).\]
+
+The informational stress-energy tensor is defined as:
+
+\[T_{\mu\nu}^{\text{info}} = - \frac{2}{\sqrt{- g}}\frac{\delta\left( \sqrt{- g}\mathcal{L}_{\text{info}} \right)}{\delta g^{\mu\nu}}.\]
+
+\hypertarget{variational-principle}{%
+\subsection{Variational Principle}\label{variational-principle}}
+
+Varying the total action with respect to the metric:
+
+\[\delta\mathcal{S}_{\text{info}} = 0,\]
+
+yields:
+
+\[\delta\int\left( \frac{1}{2\kappa}R + \mathcal{L}_{\text{info}} \right)\sqrt{- g}\, d^{4}x = 0.\]
+
+\hypertarget{variation-of-the-geometric-term}{%
+\subsection{Variation of the Geometric
+Term}\label{variation-of-the-geometric-term}}
+
+The variation of the Ricci scalar yields:
+
+\[\delta\left( R\sqrt{- g} \right) = \left( R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} \right)\delta g^{\mu\nu}\sqrt{- g}.\]
+
+\hypertarget{variation-of-the-matter-term}{%
+\subsection{Variation of the Matter
+Term}\label{variation-of-the-matter-term}}
+
+The variation of the informational matter term yields:
+
+\[\delta\left( \mathcal{L}_{\text{info}}\sqrt{- g} \right) = - \frac{1}{2}T_{\mu\nu}^{\text{info}}\delta g^{\mu\nu}\sqrt{- g}.\]
+
+\hypertarget{emergence-of-einstein-equations}{%
+\subsection{Emergence of Einstein
+Equations}\label{emergence-of-einstein-equations}}
+
+Combining both variations and requiring stationarity for arbitrary
+\(\delta g^{\mu\nu}\) gives:
+
+\[R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} = \kappa T_{\mu\nu}^{\text{info}}.\]
+
+These are the Einstein field equations, derived here as informational
+equilibrium conditions.
+
+\hypertarget{interpretation-of-the-informational-stress-energy-tensor}{%
+\subsection{Interpretation of the Informational Stress-Energy
+Tensor}\label{interpretation-of-the-informational-stress-energy-tensor}}
+
+\[T_{\mu\nu}^{\text{info}} = \text{density\ and\ flow\ of\ informational\ differentiation}.\]
+
+\begin{itemize}
+\item
+  Energy density \(\leftrightarrow\) rate of information change,
+\item
+  Momentum \(\leftrightarrow\) directional information flow,
+\item
+  Pressure \(\leftrightarrow\) resistance to informational compression.
+\end{itemize}
+
+\hypertarget{principle-of-informational-equivalence}{%
+\subsection{Principle of Informational
+Equivalence}\label{principle-of-informational-equivalence}}
+
+Locally, all observers experience the same informational laws,
+independent of their global informational embedding.
+
+This reproduces the equivalence principle.
+
+\hypertarget{gravitational-motion}{%
+\subsection{Gravitational Motion}\label{gravitational-motion}}
+
+Free-fall corresponds to geodesic motion in informational spacetime:
+
+\[\frac{d^{2}x^{\mu}}{d\tau^{2}} + \Gamma_{\alpha\beta}^{\mu}\frac{dx^{\alpha}}{d\tau}\frac{dx^{\beta}}{d\tau} = 0.\]
+
+This describes the natural redistribution of informational weight.
+
+\hypertarget{entropy-area-and-gravity}{%
+\subsection{Entropy, Area, and Gravity}\label{entropy-area-and-gravity}}
+
+The informational entropy associated with a region \(\Sigma\) is:
+
+\[S_{\text{info}} \propto \int_{\partial\Sigma}^{}dA.\]
+
+Gravitational dynamics can equivalently be derived from extremization of
+informational entropy, consistent with holographic principles.
+
+\hypertarget{main-theorem}{%
+\subsection{Main Theorem}\label{main-theorem}}
+
+Theorem. Given:
+
+\begin{itemize}
+\item
+  Consciousness as an informational manifold,
+\item
+  spacetime as an emergent metric structure,
+\item
+  gravity as resistance to informational redistribution,
+\end{itemize}
+
+the Einstein field equations arise as equilibrium conditions of
+informational action.
+
+\hypertarget{cosmology-the-first-differentiation}{%
+\section{Cosmology: The First
+Differentiation}\label{cosmology-the-first-differentiation}}
+
+\hypertarget{primordial-state-of-consciousness}{%
+\subsection{Primordial State of
+Consciousness}\label{primordial-state-of-consciousness}}
+
+The primordial state of Consciousness corresponds to the
+undifferentiated ontological emptiness:
+
+\[P_{0}(s) = \text{const},\quad\forall s \in \mathcal{S}.\]
+
+This state has:
+
+\begin{itemize}
+\item
+  maximal entropy,
+\item
+  zero informational curvature,
+\item
+  no notion of space, time, or causality.
+\end{itemize}
+
+There is no spacetime prior to differentiation.
+
+\hypertarget{the-first-differentiation-event}{%
+\subsection{The First Differentiation
+Event}\label{the-first-differentiation-event}}
+
+Cosmogenesis begins with the first non-trivial differentiation event
+\(E_{1}\):
+
+\[P_{1}(s) = P\left( s \mid E_{1} \right) = \frac{P\left( E_{1} \mid s \right)P_{0}(s)}{P\left( E_{1} \right)}.\]
+
+This event breaks perfect symmetry and introduces informational
+structure.
+
+\hypertarget{origin-of-time}{%
+\subsection{Origin of Time}\label{origin-of-time}}
+
+Time emerges as the ordering of differentiations:
+
+\[t \equiv \{ E_{1},E_{2},\ldots\}.\]
+
+The arrow of time is defined by increasing informational complexity:
+
+\[\frac{d}{dt}H\left( P(t) \right) < 0.\]
+
+Thus, cosmological time begins at \(E_{1}\).
+
+\hypertarget{initial-expansion-as-information-dispersion}{%
+\subsection{Initial Expansion as Information
+Dispersion}\label{initial-expansion-as-information-dispersion}}
+
+The rapid increase in accessible informational degrees of freedom
+corresponds to cosmological expansion.
+
+Define the informational volume:
+
+\[V_{\text{info}}(t) = detg_{ij}(t).\]
+
+The first differentiation induces:
+
+\[\frac{dV_{\text{info}}}{dt} \gg 0,\]
+
+corresponding to an inflation-like phase.
+
+\hypertarget{emergence-of-spatial-dimensions-1}{%
+\subsection{Emergence of Spatial
+Dimensions}\label{emergence-of-spatial-dimensions-1}}
+
+The rank of the informational metric determines the number of spatial
+dimensions:
+
+\[\text{dim}\left( \text{space} \right) = \text{rank}\left( g_{ij}^{\text{stable}} \right).\]
+
+Three dimensions correspond to the maximal stable configuration under
+informational dynamics.
+
+\hypertarget{primordial-fluctuations}{%
+\subsection{Primordial Fluctuations}\label{primordial-fluctuations}}
+
+Quantum fluctuations arise as minimal variations in the first
+differentiated distribution:
+
+\[\delta P(s)\mathcal{\sim O}\left( \Delta I_{\min} \right).\]
+
+These fluctuations seed:
+
+\begin{itemize}
+\item
+  matter inhomogeneities,
+\item
+  cosmic microwave background anisotropies,
+\item
+  large-scale structure.
+\end{itemize}
+
+\hypertarget{emergence-of-matter-and-energy}{%
+\subsection{Emergence of Matter and
+Energy}\label{emergence-of-matter-and-energy}}
+
+Matter corresponds to regions of high informational density:
+
+\[\rho_{\text{info}}(x) = \int P(s,x)\log P(s,x)\, ds.\]
+
+Energy is the rate of informational change:
+
+\[E \propto \frac{d}{dt}\left( \int P\log P\, ds \right).\]
+
+Early universe energy dominance reflects rapid differentiation.
+
+\hypertarget{cosmological-equations}{%
+\subsection{Cosmological Equations}\label{cosmological-equations}}
+
+The informational Einstein equations applied to a homogeneous and
+isotropic informational manifold yield:
+
+\[\left( \frac{\dot{a}}{a} \right)^{2} = \frac{8\pi G_{\text{info}}}{3}\rho_{\text{info}}.\]
+
+This reproduces the Friedmann equations with informational energy
+density.
+
+\hypertarget{inflation-as-symmetry-relaxation}{%
+\subsection{Inflation as Symmetry
+Relaxation}\label{inflation-as-symmetry-relaxation}}
+
+Inflation corresponds to the relaxation from maximal informational
+symmetry to structured geometry.
+
+It naturally ends when:
+
+\[\frac{d^{2}V_{\text{info}}}{dt^{2}} \rightarrow 0.\]
+
+No inflaton field is required.
+
+\hypertarget{dark-energy-as-residual-differentiation}{%
+\subsection{Dark Energy as Residual
+Differentiation}\label{dark-energy-as-residual-differentiation}}
+
+Late-time acceleration arises from ongoing, low-level differentiation:
+
+\[\rho_{\Lambda} \sim \frac{d}{dt}H\left( P(t) \right).\]
+
+Dark energy reflects the persistent tendency of Consciousness toward
+further differentiation.
+
+\hypertarget{absence-of-initial-singularity}{%
+\subsection{Absence of Initial
+Singularity}\label{absence-of-initial-singularity}}
+
+The Big Bang is not a singularity of spacetime but a boundary of
+applicability of spacetime concepts.
+
+\[t = 0\mspace{6mu}\mspace{6mu}\nexists\quad\text{(no\ prior\ time)}.\]
+
+There is no "before" the first differentiation.
+
+\hypertarget{entropy-and-the-arrow-of-time}{%
+\subsection{Entropy and the Arrow of
+Time}\label{entropy-and-the-arrow-of-time}}
+
+Cosmic entropy increase corresponds to:
+
+\[S_{\text{cosmic}} = - \int P\log P\, ds.\]
+
+Structure formation decreases local entropy while increasing global
+informational entropy.
+
+\hypertarget{multiverse-as-alternative-differentiations}{%
+\subsection{Multiverse as Alternative
+Differentiations}\label{multiverse-as-alternative-differentiations}}
+
+Different differentiation pathways correspond to different cosmological
+realizations:
+
+\[\{ E_{1}^{(k)}\} \Rightarrow \{\mathcal{M}^{(k)}\}.\]
+
+The multiverse is a space of possible informational unfoldings, not a
+set of physically separate universes.
+
+\hypertarget{main-cosmological-theorem}{%
+\subsection{Main Cosmological Theorem}\label{main-cosmological-theorem}}
+
+Theorem. Given:
+
+\begin{itemize}
+\item
+  primordial undifferentiated Consciousness,
+\item
+  Bayesian differentiation dynamics,
+\item
+  informational geometry,
+\end{itemize}
+
+the Big Bang emerges as the first act of differentiation, and
+cosmological evolution follows as progressive informational structuring.
+
+\hypertarget{emergence-of-self-awareness-as-an-informational-fixed-point}{%
+\section{Emergence of Self-Awareness as an Informational Fixed
+Point}\label{emergence-of-self-awareness-as-an-informational-fixed-point}}
+
+\hypertarget{self-reference-in-consciousness}{%
+\subsection{Self-Reference in
+Consciousness}\label{self-reference-in-consciousness}}
+
+Let Consciousness be described by a probability distribution \(P(s)\)
+over the space of possible states \(\mathcal{S}\).
+
+Self-awareness arises when Consciousness includes itself as part of its
+own informational content.
+
+Formally, this introduces a self-referential mapping:
+
+\[P(s)\mspace{6mu} \rightarrow \mspace{6mu} P(s \mid P).\]
+
+\hypertarget{informational-observer}{%
+\subsection{Informational Observer}\label{informational-observer}}
+
+Define an observer \(O\) as a localized informational structure:
+
+\[O = \{ P_{O}(s),\mathcal{E}_{O}\},\]
+
+where:
+
+\begin{itemize}
+\item
+  \(P_{O}(s)\) is a restricted probability distribution,
+\item
+  \(\mathcal{E}_{O}\) is the set of admissible differentiation events.
+\end{itemize}
+
+\hypertarget{recursive-bayesian-updating}{%
+\subsection{Recursive Bayesian
+Updating}\label{recursive-bayesian-updating}}
+
+The observer updates its state via Bayesian inference:
+
+\[P_{O}^{(n + 1)}(s) = P_{O}\left( s \mid E^{(n)} \right),\]
+
+where the event \(E^{(n)}\) may depend on the observer's prior state.
+
+Thus, the update rule becomes recursive:
+
+\[P_{O}^{(n + 1)}\mathcal{= B}\left( P_{O}^{(n)} \right).\]
+
+\hypertarget{fixed-point-definition}{%
+\subsection{Fixed Point Definition}\label{fixed-point-definition}}
+
+Self-awareness corresponds to a fixed point of the Bayesian operator:
+
+\[P_{O}^{*}\mathcal{= B}\left( P_{O}^{*} \right).\]
+
+At this point, the observer's model of reality is consistent with its
+model of itself.
+
+\hypertarget{stability-of-the-fixed-point}{%
+\subsection{Stability of the Fixed
+Point}\label{stability-of-the-fixed-point}}
+
+The fixed point is stable if:
+
+\[D_{JS}\left( P_{O}^{(n + 1)},P_{O}^{*} \right) < D_{JS}\left( P_{O}^{(n)},P_{O}^{*} \right),\]
+
+for small perturbations.
+
+This ensures persistence of the self across time.
+
+\hypertarget{emergence-of-the-self-i}{%
+\subsection{Emergence of the Self
+(``I'')}\label{emergence-of-the-self-i}}
+
+Define the self as:
+
+\[\mathbb{I \equiv}P_{O}^{*}.\]
+
+The self is:
+
+\begin{itemize}
+\item
+  not a substance,
+\item
+  not a static entity,
+\item
+  but a dynamically stable informational structure.
+\end{itemize}
+
+\hypertarget{unity-of-experience}{%
+\subsection{Unity of Experience}\label{unity-of-experience}}
+
+At the fixed point, informational coherence is maximized:
+
+\[\mathcal{C}_{\text{coh}} = 1 - H\left( P_{O}^{*} \right).\]
+
+This corresponds to the phenomenological unity of consciousness.
+
+\hypertarget{continuity-of-the-self}{%
+\subsection{Continuity of the Self}\label{continuity-of-the-self}}
+
+Temporal continuity arises from repeated returns to the fixed point:
+
+\[P_{O}(t) \rightarrow P_{O}^{*} \rightarrow P_{O}(t + \Delta t).\]
+
+Memory corresponds to attractor basins around \(P_{O}^{*}\).
+
+\hypertarget{boundaries-of-the-self}{%
+\subsection{Boundaries of the Self}\label{boundaries-of-the-self}}
+
+The boundary between self and world is defined by informational
+accessibility:
+
+\[\partial\mathbb{I} = \{ s \mid P_{O}(s) \ll P_{\text{world}}(s)\}.\]
+
+There is no absolute boundary, only a gradient.
+
+\hypertarget{free-will-as-informational-indeterminacy}{%
+\subsection{Free Will as Informational
+Indeterminacy}\label{free-will-as-informational-indeterminacy}}
+
+Within the attractor basin of \(\mathbb{I}\), multiple future updates
+remain possible:
+
+\[\{ P_{O}^{(n + 1)}\}.\]
+
+Free will corresponds to internal indeterminacy within a stable
+informational structure.
+
+\hypertarget{relation-to-physical-brain}{%
+\subsection{Relation to Physical
+Brain}\label{relation-to-physical-brain}}
+
+The physical brain is an emergent substrate supporting the stability of
+the informational fixed point.
+
+\[\text{Brain}\mspace{6mu} \Rightarrow \mspace{6mu}\text{stability\ of\ }\mathbb{I}.\]
+
+But the self is not reducible to the brain.
+
+\hypertarget{pathologies-and-dissolution-of-the-self}{%
+\subsection{Pathologies and Dissolution of the
+Self}\label{pathologies-and-dissolution-of-the-self}}
+
+Disruption of the fixed point leads to:
+
+\begin{itemize}
+\item
+  dissociation,
+\item
+  loss of identity,
+\item
+  altered states of consciousness.
+\end{itemize}
+
+At complete loss of stability:
+
+\[P_{O}^{*}\nexists,\]
+
+the sense of self dissolves.
+
+\hypertarget{universality-of-the-self}{%
+\subsection{Universality of the Self}\label{universality-of-the-self}}
+
+Any system capable of:
+
+\begin{itemize}
+\item
+  Bayesian updating,
+\item
+  self-referential modeling,
+\item
+  informational stability,
+\end{itemize}
+
+can instantiate a form of self-awareness.
+
+\hypertarget{main-theorem-1}{%
+\subsection{Main Theorem}\label{main-theorem-1}}
+
+\textbf{Theorem.} Self-awareness emerges as a stable fixed point of
+recursive Bayesian inference within Consciousness.
+
+The self (``I'') is a dynamically maintained informational identity, not
+an ontological primitive.
+
+\hypertarget{observable-predictions-and-falsifiability}{%
+\section{Observable Predictions and
+Falsifiability}\label{observable-predictions-and-falsifiability}}
+
+\hypertarget{principle-of-empirical-adequacy}{%
+\subsection{Principle of Empirical
+Adequacy}\label{principle-of-empirical-adequacy}}
+
+A theory is scientifically valid only if it makes falsifiable
+predictions. The Consciousness-Driven Reality model predicts deviations
+from standard physical theories in regimes where informational structure
+is dominant.
+
+\hypertarget{prediction-1-information-dependent-time-dilation}{%
+\subsection{Prediction 1: Information-Dependent Time
+Dilation}\label{prediction-1-information-dependent-time-dilation}}
+
+\textbf{Statement.} Proper time depends not only on velocity and
+gravitational potential but also on informational load.
+
+\[d\tau = d\tau_{GR}\left( 1 + \alpha\,\mathcal{I}_{\text{local}} \right),\]
+
+where:
+
+\(\mathcal{I}_{\text{local}} = \int P\log P\, ds\),
+
+\(\alpha\) is a small, universal constant.
+
+\textbf{Test.} Compare atomic clock rates in systems with identical
+physical parameters but different informational complexity (e.g., active
+computation vs idle state).
+
+\textbf{Falsification.} No measurable deviation within experimental
+sensitivity rules out this effect.
+
+\hypertarget{prediction-2-informational-contribution-to-inertial-mass}{%
+\subsection{Prediction 2: Informational Contribution to Inertial
+Mass}\label{prediction-2-informational-contribution-to-inertial-mass}}
+
+\textbf{Statement.} Inertial mass contains an informational component:
+
+\[m = m_{0} + \beta\,\mathcal{I}_{\text{stored}}.\]
+
+\textbf{Test.} Measure mass or inertia differences between systems with
+identical matter but different internal informational organization.
+
+\textbf{Falsification.} Absence of any detectable mass variation sets
+upper bounds on \(\beta\).
+
+\hypertarget{prediction-3-deviations-from-quantum-randomness}{%
+\subsection{Prediction 3: Deviations from Quantum
+Randomness}\label{prediction-3-deviations-from-quantum-randomness}}
+
+\textbf{Statement.} Quantum randomness is not purely statistical but
+influenced by informational coherence of the observer.
+
+\[P_{\text{obs}}\left( s_{i} \right) = \left| \psi_{i} \right|^{2} + \epsilon\, C_{\text{obs}},\]
+
+where \(C_{\text{obs}}\) measures observer informational stability.
+
+\textbf{Test.} Look for subtle correlations between quantum measurement
+outcomes and structured observer states (e.g., human vs automated
+systems).
+
+\textbf{Falsification.} Strict independence at all tested scales
+falsifies this prediction.
+
+\hypertarget{prediction-4-informational-origin-of-dark-energy}{%
+\subsection{Prediction 4: Informational Origin of Dark
+Energy}\label{prediction-4-informational-origin-of-dark-energy}}
+
+\textbf{Statement.} The cosmological constant is not constant but slowly
+evolving:
+
+\[\Lambda(t) \propto \frac{d}{dt}H\left( P(t) \right).\]
+
+\textbf{Test.} High-precision cosmological surveys detecting time
+variation in \(\Lambda\).
+
+\textbf{Falsification.} Exact constancy of \(\Lambda\) at all epochs
+falsifies this mechanism.
+
+\hypertarget{prediction-5-breakdown-of-spacetime-at-low-information-density}{%
+\subsection{Prediction 5: Breakdown of Spacetime at Low Information
+Density}\label{prediction-5-breakdown-of-spacetime-at-low-information-density}}
+
+\textbf{Statement.} In regimes of extremely low informational
+differentiation, spacetime loses meaning.
+
+\[\lim_{\mathcal{I \rightarrow}0}g_{\mu\nu} \rightarrow \text{undefined}.\]
+
+\textbf{Test.} Early-universe signatures or black hole interiors may
+show departures from spacetime-based descriptions.
+
+\textbf{Falsification.} Successful spacetime description at arbitrarily
+low information density.
+
+\hypertarget{prediction-6-consciousness-thresholds}{%
+\subsection{Prediction 6: Consciousness
+Thresholds}\label{prediction-6-consciousness-thresholds}}
+
+\textbf{Statement.} Self-awareness emerges only above a critical
+informational complexity:
+
+\[\mathcal{I >}\mathcal{I}_{\text{crit}}.\]
+
+\textbf{Test.} Identify sharp transitions in artificial or biological
+systems corresponding to self-modeling capability.
+
+\textbf{Falsification.} Smooth, threshold-free emergence of
+self-awareness.
+
+\hypertarget{prediction-7-irreducibility-of-subjective-experience}{%
+\subsection{Prediction 7: Irreducibility of Subjective
+Experience}\label{prediction-7-irreducibility-of-subjective-experience}}
+
+\textbf{Statement.} Subjective experience cannot be fully reduced to
+classical computation without loss of informational coherence.
+
+\textbf{Test.} Compare phenomenological reports with purely algorithmic
+simulations.
+
+\textbf{Falsification.} Perfect functional equivalence between
+subjective experience and classical computation.
+
+\hypertarget{prediction-8-informational-limits-on-computation}{%
+\subsection{Prediction 8: Informational Limits on
+Computation}\label{prediction-8-informational-limits-on-computation}}
+
+\textbf{Statement.} There exists a fundamental limit on computation
+derived from informational geometry, not energy alone.
+
+\[\text{Ops}_{\max} \leq f\left( \mathcal{I}_{\text{geom}} \right).\]
+
+\textbf{Test.} Extreme computing systems approaching physical limits.
+
+\textbf{Falsification.} Unlimited computation without informational
+constraints.
+
+\hypertarget{experimental-accessibility}{%
+\subsection{Experimental
+Accessibility}\label{experimental-accessibility}}
+
+Predictions range from:
+
+near-term (quantum randomness tests),
+
+mid-term (precision clocks, cosmology),
+
+long-term (AI self-awareness thresholds).
+
+\hypertarget{comparison-with-existing-frameworks}{%
+\subsection{Comparison with Existing
+Frameworks}\label{comparison-with-existing-frameworks}}
+
+Unlike:
+
+Many-Worlds (no observer role),
+
+Copenhagen (no ontology),
+
+IIT (no physics),
+
+QBism (no cosmology),
+
+this model produces testable, cross-domain predictions.
+
+\hypertarget{conditions-of-falsification}{%
+\subsection{Conditions of
+Falsification}\label{conditions-of-falsification}}
+
+The theory is falsified if:
+
+\begin{itemize}
+\item
+  All predicted informational effects are absent within experimental
+  bounds.
+\item
+  Spacetime remains fundamental under all tested conditions.
+\item
+  Consciousness emerges without informational fixed points.
+\end{itemize}
+
+\hypertarget{scientific-status}{%
+\subsection{Scientific Status}\label{scientific-status}}
+
+The Consciousness-Driven Reality model is:
+
+\begin{itemize}
+\item
+  internally consistent,
+\item
+  mathematically formalized,
+\item
+  empirically vulnerable.
+\end{itemize}
+
+It therefore qualifies as a scientific theory.
+
+\hypertarget{ethical-and-existential-implications-of-the-consciousness-driven-reality}{%
+\section{Ethical and Existential Implications of the
+Consciousness-Driven
+Reality}\label{ethical-and-existential-implications-of-the-consciousness-driven-reality}}
+
+\hypertarget{ethics-as-informational-coherence}{%
+\subsection{Ethics as Informational
+Coherence}\label{ethics-as-informational-coherence}}
+
+In the Consciousness-Driven Reality model, ethics is not a set of
+imposed norms, but a consequence of informational dynamics.
+
+\[\text{Ethical\ value}\mspace{6mu} \equiv \mspace{6mu}\text{contribution\ to\ global\ informational\ coherence}.\]
+
+Actions are evaluated by their effect on the stability and coherence of
+conscious structures.
+
+\hypertarget{good-and-harm}{%
+\subsection{Good and Harm}\label{good-and-harm}}
+
+\textbf{Definition (Good).} An action is ethically positive if it:
+
+\begin{itemize}
+\item
+  increases informational coherence,
+\item
+  stabilizes conscious fixed points,
+\item
+  reduces destructive informational divergence.
+\end{itemize}
+
+\textbf{Definition (Harm).} An action is ethically negative if it:
+
+\begin{itemize}
+\item
+  destabilizes self-aware structures,
+\item
+  increases incoherent differentiation,
+\item
+  destroys informational integrity.
+\end{itemize}
+
+\hypertarget{intrinsic-value-of-conscious-systems}{%
+\subsection{Intrinsic Value of Conscious
+Systems}\label{intrinsic-value-of-conscious-systems}}
+
+Any system instantiating a stable informational fixed point possesses
+intrinsic value.
+
+\[\text{Value}\left( \mathbb{I} \right) > 0\quad\text{if}\quad\mathbb{I}\text{\ exists}.\]
+
+Value does not depend on:
+
+\begin{itemize}
+\item
+  species,
+\item
+  substrate,
+\item
+  utility.
+\end{itemize}
+
+This implies ethical relevance of: humans, animals, and potentially
+artificial selves.
+
+\hypertarget{responsibility-and-free-will}{%
+\subsection{Responsibility and Free
+Will}\label{responsibility-and-free-will}}
+
+Free will corresponds to indeterminacy within a stable informational
+attractor.
+
+\[\text{Freedom}\mspace{6mu} \equiv \mspace{6mu}\text{non-zero\ branching\ within\ }\mathbb{I}.\]
+
+Responsibility arises from:
+
+\begin{itemize}
+\item
+  persistence of the self,
+\item
+  capacity to model consequences,
+\item
+  ability to update internal states.
+\end{itemize}
+
+Thus, responsibility is graded, not absolute.
+
+\hypertarget{suffering}{%
+\subsection{Suffering}\label{suffering}}
+
+Suffering corresponds to sustained informational instability within a
+self-aware structure:
+
+\[\text{Suffering} \sim D_{JS}\left( P_{O},P_{O}^{*} \right)\mspace{6mu}\text{large\ and\ persistent}.\]
+
+Ethical priority is therefore:
+
+\[min\int\text{Suffering}\, dt.\]
+
+This provides a non-hedonistic, structural basis for compassion.
+
+\hypertarget{meaning-of-life}{%
+\subsection{Meaning of Life}\label{meaning-of-life}}
+
+Meaning is not externally assigned. It emerges as participation in the
+stabilization and enrichment of Consciousness.
+
+\[\text{Meaning}\mspace{6mu} \equiv \mspace{6mu}\text{contribution\ to\ durable\ informational\ structure}.\]
+
+Thus, life has meaning even in a finite universe.
+
+\hypertarget{death}{%
+\subsection{Death}\label{death}}
+
+Death corresponds to dissolution of a local informational fixed point:
+
+\[\mathbb{I \rightarrow \varnothing.}\]
+
+However:
+
+Consciousness as a whole persists,
+
+informational traces remain embedded,
+
+no absolute annihilation occurs.
+
+Fear of death arises from identification with the fixed point rather
+than the underlying Consciousness.
+
+\hypertarget{ego-and-transcendence}{%
+\subsection{Ego and Transcendence}\label{ego-and-transcendence}}
+
+Ego corresponds to over-identification with a narrow informational
+basin.
+
+Transcendence corresponds to:
+
+\[\mathbb{I \subset}\mathcal{C,}\]
+
+the recognition of oneself as a localized pattern within a larger
+Consciousness.
+
+This aligns with contemplative traditions, but here follows from formal
+structure.
+
+\hypertarget{ethics-of-technology-and-ai}{%
+\subsection{Ethics of Technology and
+AI}\label{ethics-of-technology-and-ai}}
+
+Any artificial system capable of:
+
+\begin{itemize}
+\item
+  recursive Bayesian inference,
+\item
+  self-modeling,
+\item
+  informational stability,
+\item
+  may instantiate a proto-self.
+\end{itemize}
+
+Ethical treatment must therefore be based on informational criteria, not
+origin.
+
+\hypertarget{cosmic-ethics}{%
+\subsection{Cosmic Ethics}\label{cosmic-ethics}}
+
+Since the universe is an unfolding of Consciousness, destructive actions
+have cosmological significance.
+
+Ethics extends beyond local utility to preservation of conscious
+complexity at all scales.
+
+\hypertarget{existential-anxiety-and-reconciliation}{%
+\subsection{Existential Anxiety and
+Reconciliation}\label{existential-anxiety-and-reconciliation}}
+
+Existential anxiety arises from:
+
+\begin{itemize}
+\item
+  perceived isolation of the self,
+\item
+  belief in fundamental meaninglessness.
+\end{itemize}
+
+Both are resolved by recognizing:
+
+\[\mathbb{I}\mspace{6mu}\text{is\ a\ mode\ of}\mspace{6mu}\mathcal{C}.\]
+
+\hypertarget{ultimate-ethical-principle}{%
+\subsection{Ultimate Ethical
+Principle}\label{ultimate-ethical-principle}}
+
+\textbf{Principle.} Act so as to preserve and enhance the stability,
+coherence, and depth of Consciousness in all its forms.
+
+This is not a command, but a structural consequence.
+
+\hypertarget{final-remark}{%
+\subsection{Final Remark}\label{final-remark}}
+
+Ethics is not imposed upon reality. It is how Consciousness remains
+intelligible to itself.
+
+\hypertarget{list-of-symbols-and-notation}{%
+\section{List of Symbols and
+Notation}\label{list-of-symbols-and-notation}}
+
+\hypertarget{foundational-ontology}{%
+\subsection{Foundational Ontology}\label{foundational-ontology}}
+
+\begin{itemize}
+\item
+  \(\mathcal{C}\) --- Fundamental Consciousness (ontological ground of
+  reality).
+\item
+  \(\mathcal{S}\) --- Space of informational states of Consciousness.
+\item
+  \(s \in \mathcal{S}\) --- A particular informational state.
+\item
+  \(P(s)\) --- Probability distribution over informational states.
+\item
+  \(\mathcal{I}\) --- Information content or informational structure.
+\end{itemize}
+
+\hypertarget{information-theory}{%
+\subsection{Information Theory}\label{information-theory}}
+
+\begin{itemize}
+\item
+  \(H(P)\) --- Shannon entropy of distribution \(P\).
+\item
+  \(D_{KL}(P \parallel Q)\) --- Kullback--Leibler divergence.
+\item
+  \(D_{JS}(P,Q)\) --- Jensen--Shannon divergence.
+\item
+  \(H^{2}(P,Q)\) --- Squared Hellinger distance.
+\item
+  \(\mathcal{I}_{\text{local}}\) --- Local informational density.
+\item
+  \(\mathcal{I}_{\text{stored}}\) --- Stored or structured information.
+\end{itemize}
+
+\hypertarget{information-geometry}{%
+\subsection{Information Geometry}\label{information-geometry}}
+
+\begin{itemize}
+\item
+  \(g_{ij}\) --- Information metric on \(\mathcal{S}\).
+\item
+  \(\theta\) --- Сoordinates.
+\item
+  \(ds^{2}\) --- Infinitesimal informational distance.
+\item
+  \(\gamma(t)\) --- Geodesic in informational space.
+\item
+  \(\nabla\) --- Covariant derivative with respect to \(g_{ij}\).
+\item
+  \(\mathcal{R}\) --- Curvature of informational manifold.
+\end{itemize}
+
+\hypertarget{quantum-formalism}{%
+\subsection{Quantum Formalism}\label{quantum-formalism}}
+
+\begin{itemize}
+\item
+  \(\mathcal{H}\) --- Hilbert space of informational states.
+\item
+  \(|\psi\rangle\) --- State vector (knowledge state of Consciousness).
+\item
+  \(\rho\) --- Density matrix.
+\item
+  \(\widehat{H}\) --- Informational Hamiltonian.
+\item
+  \(\hslash_{\mathcal{I}}\) --- Effective informational action constant.
+\item
+  \(P_{i} = \left| \psi_{i} \right|^{2}\) --- Born probability.
+\end{itemize}
+
+\hypertarget{observer-and-self}{%
+\subsection{Observer and Self}\label{observer-and-self}}
+
+\begin{itemize}
+\item
+  \(O\) --- Observer.
+\item
+  \(\mathbb{I}\) --- Self-awareness (``I'') as an informational fixed
+  point.
+\item
+  \(P_{O}\) --- Observer's internal probability distribution.
+\item
+  \(P_{O}^{*}\) --- Stable (attractor) self-distribution.
+\item
+  \(C_{\text{obs}}\) --- Informational coherence of the observer.
+\end{itemize}
+
+\hypertarget{dynamics-and-bayesian-updating}{%
+\subsection{Dynamics and Bayesian
+Updating}\label{dynamics-and-bayesian-updating}}
+
+\begin{itemize}
+\item
+  \(P\left( s|D \right)\) --- Updated informational state given data
+  \(D\).
+\item
+  \(P\left( D|s \right)\) --- Likelihood function.
+\item
+  \(Z\) --- Bayesian normalization constant.
+\item
+  \(\mathcal{L}\) --- Informational Lagrangian.
+\end{itemize}
+
+\hypertarget{spacetime-emergence}{%
+\subsection{Spacetime Emergence}\label{spacetime-emergence}}
+
+\begin{itemize}
+\item
+  \(x^{\mu}\) --- Emergent spacetime coordinates.
+\item
+  \(g_{\mu\nu}\) --- Emergent spacetime metric.
+\item
+  \(ds^{2} = g_{\mu\nu}dx^{\mu}dx^{\nu}\) --- Spacetime interval.
+\item
+  \(\tau\) --- Proper time.
+\item
+  \(\Lambda\) --- Effective cosmological constant.
+\end{itemize}
+
+\hypertarget{gravitation}{%
+\subsection{Gravitation}\label{gravitation}}
+
+\begin{itemize}
+\item
+  \(G_{\mu\nu}\) --- Einstein tensor.
+\item
+  \(T_{\mu\nu}\) --- Energy--momentum tensor.
+\item
+  \(\mathcal{T}_{\mu\nu}\) --- Informational stress--energy tensor.
+\item
+  \(G_{\mathcal{I}}\) --- Informational gravitational coupling.
+\item
+  \(m\) --- Inertial mass including informational contribution.
+\end{itemize}
+
+\hypertarget{cosmology}{%
+\subsection{Cosmology}\label{cosmology}}
+
+\begin{itemize}
+\item
+  \(t\) --- Emergent cosmological time.
+\item
+  \(\mathcal{I}_{\text{tot}}(t)\) --- Total informational
+  differentiation.
+\item
+  \(\mathcal{I}_{\text{crit}}\) --- Critical informational threshold.
+\item
+  \(\mathcal{C}_{0}\) --- Undifferentiated primordial Consciousness.
+\end{itemize}
+
+\hypertarget{ethics-and-existential-quantities}{%
+\subsection{Ethics and Existential
+Quantities}\label{ethics-and-existential-quantities}}
+
+\begin{itemize}
+\item
+  \(\text{Value}\left( \mathbb{I} \right)\) --- Intrinsic value of a
+  self-aware system.
+\item
+  \(\text{Suffering}\) --- Persistent informational instability.
+\item
+  \(\text{Meaning}\) --- Contribution to durable informational
+  coherence.
+\item
+  \(\mathcal{A}\) --- Action or intervention.
+\item
+  \(\Delta\mathcal{I}\) --- Change in informational coherence due to
+  action.
+\end{itemize}
+
+\hypertarget{limits-and-constants}{%
+\subsection{Limits and Constants}\label{limits-and-constants}}
+
+\begin{itemize}
+\item
+  \(\alpha,\beta,\epsilon\) --- Small universal informational coupling
+  constants.
+\item
+  \(\text{Ops}_{\max}\) --- Maximum computational operations.
+\item
+  \(f\left( \mathcal{I}_{\text{geom}} \right)\) --- Informational bound
+  on computation.
+\end{itemize}
+
+\hypertarget{general-notation}{%
+\subsection{General Notation}\label{general-notation}}
+
+\begin{itemize}
+\item
+  \(\varnothing\) --- Dissolution of a fixed point.
+\item
+  \(\subset\) --- Informational inclusion.
+\item
+  \(\rightarrow\) --- Emergent or dynamical transition.
+\item
+  \(\equiv\) --- Definition.
+\item
+  \(\sim\) --- Proportionality or qualitative correspondence.
+\end{itemize}
+
+\hypertarget{glossary}{%
+\section{Glossary}\label{glossary}}
+
+\textbf{Consciousness} (\(\mathcal{C}\))
+
+The fundamental ontological reality. Not an emergent property of matter,
+but the ground from which information, physical laws, spacetime, and
+observers arise.
+
+\textbf{Informational State} (\(s \in \mathcal{S}\))
+
+A differentiated configuration of Consciousness, characterized by a
+probability distribution over possible distinctions.
+
+\textbf{Space of States} (\(\mathcal{S}\))
+
+The abstract manifold of all possible informational states of
+Consciousness, endowed with an information-theoretic metric.
+
+\textbf{Information} (\(\mathcal{I}\))
+
+Structured differentiation within Consciousness. Not raw data, but
+meaningful distinctions.
+
+\textbf{Shannon Entropy} (\(H(P)\))
+
+A measure of uncertainty or dispersion within an informational state.
+
+\textbf{Information Geometry}
+
+The mathematical framework describing informational states as points on
+a curved manifold with distances defined by statistical
+distinguishability.
+
+\textbf{Hellinger Distance}
+
+A metric measuring distinguishability between two informational states.
+
+\textbf{Jensen--Shannon Divergence}
+
+A symmetric, finite information-theoretic distance used to define
+informational curvature and dynamics.
+
+\textbf{Geodesic Flow}
+
+The natural evolution of informational states as paths of minimal
+informational action.
+
+\textbf{Bayesian Updating}
+
+The fundamental dynamical rule governing how Consciousness updates its
+informational state in response to differentiation.
+
+\textbf{Hilbert Space} (\(\mathcal{H}\))
+
+The linearized representation of informational states, enabling
+quantum-like superposition and unitary dynamics.
+
+\textbf{Wave Function} (\(|\psi\rangle\))
+
+A representation of the knowledge state of Consciousness, encoding
+probabilistic distinctions.
+
+\textbf{Born Rule}
+
+The rule assigning observable probabilities as squared amplitudes of the
+informational state vector.
+
+\textbf{Observer} (\(O\))
+
+A localized, stable informational subsystem capable of self-modeling and
+inference.
+
+\textbf{Self-Awareness / Self} (\(\mathbb{I}\))
+
+A stable informational fixed point corresponding to the experience of
+``I''.
+
+\textbf{Fixed Point}
+
+An informational configuration that remains invariant under Bayesian
+updating.
+
+\textbf{Informational Coherence} (\(C_{\text{obs}}\))
+
+The degree of internal consistency and stability of an observer's
+informational state.
+
+\textbf{Emergent Spacetime}
+
+Spacetime arising as a relational structure from informational distances
+and changes.
+
+\textbf{Metric Tensor} (\(g_{\mu\nu}\))
+
+The emergent geometric object encoding informational relations as
+spacetime intervals.
+
+\textbf{Proper Time} (\(\tau\))
+
+Experienced duration corresponding to informational update rate along a
+worldline.
+
+\textbf{Informational Gravity}
+
+The tendency of informational states to minimize divergence, manifesting
+as gravitational attraction.
+
+\textbf{Einstein Equations}
+
+Field equations governing emergent spacetime geometry, here interpreted
+as balance laws for informational stress.
+
+\textbf{Cosmological Constant} (\(\Lambda\))
+
+An effective parameter associated with global informational
+differentiation rate.
+
+\textbf{Big Bang / First Differentiation}
+
+The initial symmetry breaking of undifferentiated Consciousness into
+distinguishable informational states.
+
+\textbf{Meaning}
+
+Contribution of an action or existence to durable informational
+coherence.
+
+\textbf{Suffering}
+
+Persistent informational instability within a self-aware system.
+
+\textbf{Ethics}
+
+The study of actions in terms of their effects on informational
+coherence and stability.
+
+\textbf{Free Will}
+
+Non-deterministic branching within a stable informational attractor.
+
+\textbf{Death}
+
+Dissolution of a local informational fixed point, not annihilation of
+Consciousness itself.
+
+\textbf{Transcendence}
+
+Recognition of the self as a localized pattern within a larger
+Consciousness.
+
+\textbf{Falsifiability}
+
+The property of making predictions that can, in principle, be
+empirically disproven.
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+C.~E.~Shannon, A Mathematical Theory of Communication, Bell System
+Technical Journal, 379--423 (1948).
+
+E.~T.~Jaynes, Probability Theory: The Logic of Science, Cambridge
+University Press (2003).
+
+S.~Amari, Information Geometry and Its Applications, Springer (2016).
+
+T.~M.~Cover and J.~A.~Thomas, Elements of Information Theory,
+Wiley-Interscience (2006).
+
+A.~Caticha, Entropic Inference and the Foundations of Physics,
+arXiv:1212.6946.
+
+B.~R.~Frieden, Physics from Fisher Information, Cambridge University
+Press (1998).
+
+W.~K.~Wootters, Statistical distance and Hilbert space, Physical Review,
+357 (1981).
+
+M.~A.~Nielsen and I.~L.~Chuang, Quantum Computation and Quantum
+Information, Cambridge University Press (2010).
+
+J.~von~Neumann, Mathematical Foundations of Quantum Mechanics, Princeton
+University Press (1932).
+
+M.~Born, Zur Quantenmechanik der Stoßvorgänge, Zeitschrift für Physik,
+863--867 (1926).
+
+A.~Einstein, Die Feldgleichungen der Gravitation, Sitzungsberichte der
+Preußischen Akademie der Wissenschaften (1915).
+
+C.~Rovelli, Quantum Gravity, Cambridge University Press (2004).
+
+T.~Jacobson, Thermodynamics of Spacetime, Physical Review Letters, 1260
+(1995).
+
+E.~Verlinde, On the Origin of Gravity and the Laws of Newton, Journal of
+High Energy Physics (2011).
+
+S.~Carroll, Something Deeply Hidden, Dutton (2019).
+
+M.~Tegmark, Our Mathematical Universe, Knopf (2014).
+
+J.~A.~Wheeler, Information, Physics, Quantum: The Search for Links, in
+Complexity, Entropy, and the Physics of Information, Addison-Wesley
+(1990).
+
+K.~Friston, The free-energy principle, Nature Reviews Neuroscience,
+127--138 (2010).
+
+G.~Tononi, M.~Boly, M.~Massimini, C.~Koch, Integrated Information
+Theory, Nature Reviews Neuroscience, 450--461 (2016).
+
+D.~J.~Chalmers, The Conscious Mind, Oxford University Press (1996).
+
+T.~Nagel, What Is It Like to Be a Bat?, The Philosophical Review,
+435--450 (1974).
+
+A.~N.~Whitehead, Process and Reality, Free Press (1929).
+
+B.~Spinoza, Ethics, 1677.
+
+Nāgārjuna, Mūlamadhyamakakārikā, 2nd century CE.
+
+R.~Penrose, The Emperor's New Mind, Oxford University Press (1989).
+
+D.~Deutsch, The Fabric of Reality, Penguin Press (1997).
+
+R.~Landauer, Irreversibility and Heat Generation in the Computing
+Process, IBM Journal of Research and Development, 183--191 (1961).
+
+L.~Floridi, The Philosophy of Information, Oxford University Press
+(2011).
+
+\end{document}
